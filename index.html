@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koll | Task planner</title>
+    <link rel="icon" href="assets/logo.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="todo.js" defer></script>
+</head>
+<body>
+    <div class="circle-cursor"></div>
+    <div class="container">
+        <div class="branding m-b flex">
+            <img class="logo" src="assets/logo.svg" alt="">
+            <h1 class="title">From Chaos to <span class="blue">Koll</span>-ected.</h1>
+        </div>
+        <form id="form" class="form m-b flex">
+            <div class="add-container flex">
+                <input id="todoInput" class="input" type="text" placeholder="Your notes here.....">
+                <button id="addBtn" class="add-btn">Add +</button>
+            </div>
+            <p class="message m-b">You can't add empty notes!</p>
+        </form>
+        <section id="todoList" class="todo-list m-b">
+            <div id="new-todos" class="new-todos flex">
+                <h4>&plus; New Notes</h4>
+                <div class="popup">
+                    <p class="popup__text">
+                        Mark your note as completed before deleting it!
+                    </p>
+                </div>
+            </div>
+            <div id="completed-todos" class="completed-todos flex">
+                <h4>&#10003; Completed Notes</h4>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
